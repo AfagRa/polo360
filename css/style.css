@@ -1,0 +1,220 @@
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+header {
+    background: linear-gradient(#d5d5d5, #f3f3f3, #fafafa, #ffffff);
+    padding: 37px 0 24px 0;
+    text-align: center;
+}
+#logo img {
+    width: 35%;
+}
+menu{
+    padding-top: 20px; 
+}
+menu li {
+    font: .7em Tahoma, sans-serif;
+    color: #b7b7b7;
+}
+menu li a {
+    display: block;
+    font: bold .9rem Georgia, serif;
+    text-transform: uppercase;
+    color: #666;
+}
+main {
+    padding-top: 20px;
+    background: #ffffff url(../img/bg_gradient.jpg) repeat-x;
+}
+#slider {
+    height: 340px;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    background: url('../img/slider.jpg') center/cover;
+    box-shadow: 0 3px 10px #333;
+}
+h1 {
+    text-align: center;
+    font: bold 1.5em Georgia, serif;
+    margin: 20px 0; 
+}
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+.row { 
+    padding: 24px 0; 
+}
+.col { 
+    padding: 12px 10px; 
+}
+h2 {
+    font: 1.3em Georgia, serif;
+    color: #11719e;
+}
+h6 {
+    font: .8em Helvetica, sans-serif;
+    color: #8c8c8c;
+}
+article img {
+    background: #f3f3f3;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 1em 0;
+}
+.btn {
+    display: inline-block;
+    width: 164px;
+    height: 33px ;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+.btn span { float: right}
+.btn1 {
+    border: 1px solid #d8d8d8;
+    font: .8em Helvetica;
+    color: #016999;
+    background: linear-gradient(to right, #e8e8e8, #f7f7f7, #e8e8e8, #eeeeee);
+}
+.btn2 {
+    border: 1px solid #004a80;
+    text-align: left;
+    font: .8em Georgia;
+    color: #fff;
+    background: linear-gradient(to right, #31659a, #3c78b5, #2f6294, #306193);
+}
+h3 {
+    font-size: 1.2em Georgia, serif;
+    color: #444444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 6px 0;
+}
+p {
+    font: .8em/1.5 Helvetica, sans-serif;
+    color: #3e3e3e;
+    margin: 10px 0;
+}
+#icons {
+    margin: 0 10px;
+    margin-bottom: 35px;
+}
+i {
+    font-size: 3.5em;
+    display: inline-block;
+    padding: 0 7px;
+}
+.fa-square-rss:hover { color: #f16836 !important }
+.fa-square-facebook:hover { color: #476998 !important }
+.fa-linkedin:hover { color: #4d8db6 !important }
+.fa-square-youtube:hover { color: #ce5a5c !important }
+.fa-square-tumblr:hover { color: #57a3aa !important }
+
+#newsletter {
+    font: bold 1.2em 'Gill Sans', serif !important;
+    color: #444444;
+}
+form {margin: 15px 0;}
+input, textarea {
+    display: block;
+    margin: 8px 0;
+    padding: 11px 13px;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    width: 70%;
+    font: .7em 'Verdana', sans-serif;
+    letter-spacing: 0.1px;
+    color: #d4d4d4;
+}
+.news {
+    padding: 14px 9px 25px 9px;
+    border-bottom: 1px dashed #d3d3d3;
+}
+.newsimg {
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 4px;
+    width:fit-content;
+    border: 1px solid #cfcfcf;
+    float: left;
+    margin: 8px 8px 8px 0 ;
+}
+footer {
+    height: 173px;
+    background: #333333;
+    border-top: 10px solid #4c4c4c ;
+    padding: 20px 0;
+}
+footer h6 {
+    margin-bottom: 12px;
+}
+
+
+
+@media only screen and (min-width: 768px) { 
+    header {
+        text-align: initial;
+    }
+    #logo img {
+        width: 25%;
+    }
+    menu{
+        text-align: initial;
+        float: right;
+    }
+    menu li {
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+        padding: 0 8px 7px 8px;
+    }
+    .row ::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .col {
+        width: 33%; 
+        display: inline-block;
+    }
+    #copy {
+        float: right;
+    }
+    i {
+        font-size: 2.9em;
+        padding: 0 5px;
+    }
+    input, textarea {
+        display: block;
+        width: 100%;
+    }
+    #mail {margin: 0;}
+    textarea {
+        margin: 0;
+    }
+    form {margin-top: 13px;}
+    
+    
+
+    #cont p {line-height: 1;}
+    #cont .col {
+        height: 332px;
+        overflow: hidden;
+    }
+    #icons {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .btn2 {margin: 11px 0; }
+    .news {
+        margin: 12px 0 0 0;
+        padding: 0;
+    }
+    .newsimg {
+        margin-block: 0;
+        padding: 3px;
+    }
+    .news p {margin-block: 8px}
+}
